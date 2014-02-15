@@ -8,6 +8,7 @@ import me.mrsquid.commands.CommandHeal;
 import me.mrsquid.commands.CommandIgnite;
 import me.mrsquid.commands.CommandPing;
 import me.mrsquid.commands.CommandSudo;
+import me.mrsquid.commands.CommandVersion;
 import me.mrsquid.commands.CommandWhoIs;
 
 import org.bukkit.Bukkit;
@@ -31,6 +32,7 @@ public class Main extends JavaPlugin implements Listener {
 		getCommand("sudo").setExecutor(new CommandSudo(this));
 		getCommand("whois").setExecutor(new CommandWhoIs(this));
 		getCommand("ignite").setExecutor(new CommandIgnite(this));
+		getCommand("version").setExecutor(new CommandVersion(this));
 	}
 	
 	public void onDisable() {
