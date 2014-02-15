@@ -31,6 +31,6 @@ commands:
     aliases: [ignite, burn]
     permissions: [basics.command.ignite.self, basics.command.ignite.other]
   fly:
-    description: Mutes a player
-    usage: /mute <playername> <time>
-    permissions: [basics.command.mute.other]
+    description: Allows yourself to fly
+    usage: /fly
+    permissions: [basics.command.fly.self]
