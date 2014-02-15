@@ -34,3 +34,6 @@ commands:
     description: Allows yourself to fly
     usage: /fly
     permissions: [basics.command.fly.self]
+  version:
+    description: Gets the version of plugin
+    usage: /version
