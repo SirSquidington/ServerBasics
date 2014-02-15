@@ -1,0 +1,36 @@
+main: me.mrsquid.main.Main
+name: Server Basics
+version: 0.1
+author: MrSquid
+commands:
+  ping:
+    description: Pong!
+  heal:
+    description: Heals you or another player, /heal [playername]
+    usage: /heal [playername]
+    permissions: [basics.command.heal.self, basics.command.heal.other]
+  feed:
+    description: Fills you're or another player's hunger bar, /feed [playername]
+    usage: /heal [playername]
+    permissions: [basics.command.feed.self, basics.command.feed.other]
+  gm:
+    description: Sets you into the selected Gamemode, /gm <gamemode>[playername]
+    usage: /gm <gamemode> [playername]
+    permissions: [basics.command.gm.self, basics.command.gm.other]
+  sudo:
+    description: Makes selected player execute a command or say something, /sudo <playername> </command or chatmessage>
+    usage: /sudo <playername> </command or message>'
+    permissions: basics.command.sudo
+  whois:
+    description: Gets info about you or another player, /whois [playername]
+    usage: /whois [playername]
+    permissions: [basics.command.whois.self, basics.command.whois.other]
+  ignite:
+    description: Sets you or another player on fire, /ignite <time> [playername]
+    usage: /ignite <time> [playername]
+    aliases: [ignite, burn]
+    permissions: [basics.command.ignite.self, basics.command.ignite.other]
+  fly:
+    description: Mutes a player
+    usage: /mute <playername> <time>
+    permissions: [basics.command.mute.other]
